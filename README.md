@@ -17,6 +17,7 @@ Each feedback submission requires the following information
 - Name
 - Email
 - Contact number
+- Agency name
 - Feedback (free text)
 
 There should be basic validation fo the field before submission.
