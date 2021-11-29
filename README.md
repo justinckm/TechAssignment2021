@@ -34,6 +34,7 @@ Submission processing
 - feedback can be "Accepted" or "Rejected" (for this assignment you can change the status directly in database)
 - the volume of submission usually peak during certain months
 - module has to take into account of handling such situation
+- auto-scaling is not feasible
 
 ## Backend module submission status
 Submission status
