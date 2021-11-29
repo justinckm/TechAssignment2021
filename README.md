@@ -31,7 +31,8 @@ All records matching the Email and Contact number will be returned to portal
 ## Backend module submission processing
 Submission processing
 - processing need not be realtime
-- feedback can be "Accepted" or "Rejected" (for this assignment you can change the status directly in database)
+- feedback can be "Accepted" or "Rejected"
+- for this assignment, module can automatically Accept or Reject the submission by checking the Feedback against some pre-defined keywords in the database
 - the volume of submission usually peak during certain months
 - module has to take into account of handling such situation
 - auto-scaling is not feasible
