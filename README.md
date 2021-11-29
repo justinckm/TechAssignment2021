@@ -42,9 +42,6 @@ Submission status
 
 # Technical Specs
 - authentication in the portal is optional. All endpoints can be opened
-- preferrable tech stack:
-    - Web (React + React Hook Form + Redux)
-    - Backend module (Springboot + Kotlin)
 - Please host your source code in a public repository eg. Github or Bitbucket etc
 - You may choose host your application in your preferred server
 - Provide a README.md with instructions on running the application locally
