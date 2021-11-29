@@ -13,7 +13,6 @@ The backend module has 2 main functions:
 
 
 ## Portal feedback submission
-No authentication is required.
 Each feedback submission requires the following information
 - Name
 - Email
@@ -23,7 +22,6 @@ Each feedback submission requires the following information
 There should be basic validation fo the field before submission.
 
 ## Portal feedback submission status
-No authentication is required.
 User will be able to check their feedback status by filling in their
 - Email
 - Contact number
@@ -31,7 +29,6 @@ User will be able to check their feedback status by filling in their
 All records matching the Email and Contact number will be returned to portal
 
 ## Backend module submission processing
-No authenticaion required (open endpoint).
 Submission processing
 - processing need not be realtime
 - feedback can be "Accepted" or "Rejected" (for this assignment you can change the status directly in database)
@@ -39,7 +36,6 @@ Submission processing
 - module has to take into account of handling such situation
 
 ## Backend module submission status
-No authenticaion required (open endpoint).
 Submission status
 - return all records matching given Email and Contact number
 
