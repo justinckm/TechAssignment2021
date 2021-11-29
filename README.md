@@ -41,6 +41,7 @@ Submission status
 - return all records matching given Email and Contact number
 
 # Technical Specs
+- applicant should use React and Springboot in this assignment
 - authentication in the portal is optional. All endpoints can be opened
 - Please host your source code in a public repository eg. Github or Bitbucket etc
 - You may choose host your application in your preferred server
