@@ -33,7 +33,7 @@ All records matching the Email and Contact number will be returned to portal
 Submission processing
 - processing need not be realtime
 - feedback can be "Accepted" or "Rejected"
-- for this assignment, module can automatically Accept or Reject the submission by checking the Feedback against some pre-defined keywords in the database
+- for this assignment, the feedback status can be obtained by invoking the endpoint <http://processfeedback.atwebpages.com/submit.php?feedback=The%0Afeedback text>
 - the volume of submission usually peak during certain months
 - module has to take into account of handling such situation
 - auto-scaling is not feasible
