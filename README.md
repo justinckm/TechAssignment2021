@@ -34,7 +34,7 @@ Submission processing
 - processing need not be realtime
 - feedback can be "Accepted" or "Rejected"
 - for this assignment, the feedback status can be obtained by invoking the endpoint
-```http://processfeedback.atwebpages.com/submit.php?feedback=<Feedback Input>```
+```https://codeify.dev/submit-feedback.php?feedback=<Feedback Input>```
 - the endpoint is intentionally slowed to return the status response
 - the volume of submission usually peak during certain months
 - module has to take into account of handling such situation
