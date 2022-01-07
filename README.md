@@ -2,51 +2,53 @@
 Company XYZ Pte Ltd is handling feedback submission for various agency. It provides an online portal for the public to submit the feedback.
 
 # Functional Specs
-Design and develop an online portal for feedback submission and a backend module to process the submission for Company XYZ Pte Ltd.
-The web portal has 2 main functions:
-- submission
-- check status
+Design and develop a **Frontend Module**(Web Portal) for feedback submission and a **Backend module**(API) to process the submission for Company XYZ Pte Ltd. 
 
-The backend module has 2 main functions:
-- process incoming submission
-- check submission status
+The **Web Portal** has 2 main functions:
+- create submission (refer to Submission Form)
+- check status of past submissions (refer to Submission Status)
 
+The **API** has 2 main functions:
+- process incoming submissions (refer to Submission Processing)
+- retrieves submission status (refer to Submission Retrieval)
 
-## Portal feedback submission
-Each feedback submission requires the following information
-- Name
-- Email
-- Contact number
+## Submission Form
+Each submission form requires the following information:
+- Name*
+- Email*
+- Contact number*
 - Agency name
-- Feedback (free text)
+- Feedback (free text)*
+There should be basic validation for the fields before submission.
+There is no limit to the number of submission by the same user.
+* denotes mandatory fields
 
-There should be basic validation fo the field before submission.
-
-## Portal feedback submission status
+## Submission Status
 User will be able to check their feedback status by filling in their
-- Email
-- Contact number
+- Email*
+- Contact number*
+All records matching the Email and Contact number will be returned to portal.
+There should be basic validation for the fields before submission.
+* denotes mandatory fields
 
-All records matching the Email and Contact number will be returned to portal
-
-## Backend module submission processing
-Submission processing
-- processing need not be realtime
-- feedback can be "Accepted" or "Rejected"
-- for this assignment, the feedback status can be obtained by invoking the endpoint
-```https://codeify.dev/submit-feedback.php?feedback=<Feedback Input>```
-- the endpoint is intentionally slowed to return the status response
-- the volume of submission usually peak during certain months
-- module has to take into account of handling such situation
+## Submission Processing
+- provide an API endpoint to receive submission
+- processing of each submission need not be realtime
+- feedback status can be "Accepted" or "Rejected" and can be obtained by invoking the following endpoint https://codeify.dev/submit-feedback.php?feedback=<Feedback Input>
+- this stub endpoint is intentionally throttled (latency up to 10secs) to return a response
+- ensure that the design is able to handle huge volume of submission usually peak during certain months
+- ensure that the user experience is not affected under such scenario
 - auto-scaling is not feasible
 
-## Backend module submission status
-Submission status
-- return all records matching given Email and Contact number
+## Submission Retrieval
+- provide an API endpoint to fetch all submission status based on matching  inputs eg.  Email and Contact number
+- do consider if the same user submitted more than a thousand submissions
 
 # Technical Specs
-- applicant should use React and Springboot in this assignment
-- authentication in the portal is optional. All endpoints can be opened
-- Please host your source code in a public repository eg. Github or Bitbucket etc
-- You may choose host your application in your preferred server
+- Preferred tech stack:  React and Spring Boot
+- The application must be Production Ready
+- Host your source code in a public repository eg. Github or Bitbucket etc
 - Provide a README.md with instructions on running the application locally
+- You would be expected to demonstrate the performance of handling huge volume of submissions
+- Host your application in your preferred server (Optional)
+- User Authentication in the Portal (Optional)
